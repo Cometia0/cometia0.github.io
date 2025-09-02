@@ -4,7 +4,7 @@
     - name: Full Name
       value: Jiale Chu
     - name: Date of Birth
-      value: 22nd Apr 2004
+      value: Apr 2004
     - name: Languages
       value: English, Mandarin
 
@@ -37,12 +37,12 @@
         - Developed a micro-scale camera integrated PCB for the capsule robot, utilizing an ESP32 for real-time wireless image capture.
     - title: Research Assistant
       institution: Shanghai Jiao Tong University, Laboratory of Ultrafast Integrated Systems
-      year: Jan 2024 - May 2024
+      year: 2024
       description:
         - Designed and fabricated a PCB for a wideband PLL-based RF signal source (2.4-2.8 GHz) with 70dBc phase noise for high-resolution sensing.
     - title: Research Assistant
       institution: Shanghai Jiao Tong University, Laboratory of Ultrafast Integrated Systems
-      year: Aug 2023 - Dec 2023
+      year: 2023
       description:
         - Developed a MATLAB signal processing pipeline using VMD and HHT to extract respiration signals from noisy FMCW radar data.
         - Fused radar data with a YOLOv4 vision system for targeted life sign monitoring in multi-person scenarios.
@@ -52,7 +52,7 @@
   contents:
     - title: Researcher Engineer Intern
       institution: SinoFlow, Shanghai, China
-      year: Apr 2024 - Aug 2024
+      year: 2024
       description:
         - Conducted literature reviews on chip-scale thermal analysis and developed a simplified thermal model using the PEEC method.
         - Implemented the simulation algorithm in C# as a standalone tool, later integrated as a plugin into Ansys software.

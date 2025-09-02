@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Home - Cometia0
+title: Home - Jiale Chu
 first_name: Jiale
 middle_name:
 last_name: Chu
@@ -192,6 +192,7 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - "**/*.bak"
 keep_files:
   - CNAME
   - .nojekyll
