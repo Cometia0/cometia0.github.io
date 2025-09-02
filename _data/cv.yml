@@ -2,96 +2,102 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Jiale Chu
     - name: Date of Birth
-      value: 14th March 1879
+      value: 22nd Apr 2004
     - name: Languages
-      value: English, German
+      value: English, 
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Dual B.S. Degree in Robotics
+      institution: University of Michigan, Ann Arbor, MI
+      year: 2024 - 2026
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Minor in Math and Electrical Engineering.
+        - GPA 4.00/4.00 (Dean's List).
+        - Selected coursework - Robot Operation System, Multi-Robot Systems, Parallel Computer Architecture, Mobile Robotics.
+    - title: B.S. in Electrical and Computer Engineering
+      institution: Shanghai Jiao Tong University, Shanghai, China
+      year: 2022 - 2026
       description:
-        - Description 1.
-        - Description 2.
+        - GPA 3.44/4.00.
+        - Selected coursework - Digital Communication, High-frequency Circuit, Electronic Circuit, Data Structure and Algorithms.
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Summer Research Assistant
+      institution: Vanderbilt University, Miniature Robotics Laboratory
+      year: 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Engineered a magnetic actuation and tracking system featuring a Franka Emika robotic arm with high-level impedance control via ROS2.
+        - The tracking system for a 6-DOF wireless capsule robot achieved 2.48 mm position accuracy and 7.61 degrees orientation accuracy.
+        - Developed a micro-scale camera integrated PCB for the capsule robot, utilizing an ESP32 for real-time wireless image capture.
+    - title: Research Assistant
+      institution: Shanghai Jiao Tong University, Laboratory of Ultrafast Integrated Systems
+      year: Jan 2024 - May 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Designed and fabricated a PCB for a wideband PLL-based RF signal source (2.4-2.8 GHz) with 70dBc phase noise for high-resolution sensing.
+    - title: Research Assistant
+      institution: Shanghai Jiao Tong University, Laboratory of Ultrafast Integrated Systems
+      year: Aug 2023 - Dec 2023
       description:
+        - Developed a MATLAB signal processing pipeline using VMD and HHT to extract respiration signals from noisy FMCW radar data.
+        - Fused radar data with a YOLOv4 vision system for targeted life sign monitoring in multi-person scenarios.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Industrial Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Researcher Engineer Intern
+      institution: SinoFlow, Shanghai, China
+      year: Apr 2024 - Aug 2024
+      description:
+        - Conducted literature reviews on chip-scale thermal analysis and developed a simplified thermal model using the PEEC method.
+        - Implemented the simulation algorithm in C# as a standalone tool, later integrated as a plugin into Ansys software.
+
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: Teaching Assistant, VE311 Electronic Circuit
+      institution: Shanghai Jiao Tong University
+      year: 2024
+      description:
+        - Independently led monthly recitation classes and held office hours for over 100 students.
+        - Led two lab sessions, assisting student groups with experiments.
+        - Co-authored revisions for homework and lab manuals with the professor.
+        - Awarded Advanced Teaching Assistant Certificate.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - year: 2025
+      items: 
+        - S&S Fund for International Students Award, University of Michigan
+    - year: 2024
+      items: 
+        - Ranking 13/87, ICPC East Central NA
+        - Advanced Teaching Assistant Certificate, UM-SJTU Joint Institute
+    - year: 2023
+      items: 
+        - National Champion Team Member, RoboMaster University Championship
+        - Student Development Scholarship, UM-SJTU Joint Institute
+        - Honorable Mention, Mathematical Contest in Modeling
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Skills
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - "<b>Programming:</b> C/C++, Python, C#, MATLAB, Git"
+    - "<b>Hardware & Design:</b> PCB Design (Altium Designer), CAD (SolidWorks), Embedded Systems (STM32, ESP32, Arduino)"
+    - "<b>Frameworks & Tools:</b> ROS, CMake, TinyML"
+
+- title: Selected Projects
+  type: time_table
+  contents:
+    - title: Team Member, Electronics Control Group
+      institution: RoboMaster 2023 Mech Master Competition, SJTU
+      year: 2022 - 2023
+      description:
+        - Developed a high-level CAN bus communication protocol for real-time data exchange between a controller and 7 motor drivers.
+        - Independently developed a UART communication protocol for transmitting robot poses and processing commands from a host computer.
