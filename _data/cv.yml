@@ -6,7 +6,7 @@
     - name: Date of Birth
       value: 22nd Apr 2004
     - name: Languages
-      value: English, 
+      value: English, Mandarin
 
 - title: Education
   type: time_table
@@ -73,14 +73,14 @@
   type: time_table
   contents:
     - year: 2025
-      items: 
+      items:
         - S&S Fund for International Students Award, University of Michigan
     - year: 2024
-      items: 
+      items:
         - Ranking 13/87, ICPC East Central NA
         - Advanced Teaching Assistant Certificate, UM-SJTU Joint Institute
     - year: 2023
-      items: 
+      items:
         - National Champion Team Member, RoboMaster University Championship
         - Student Development Scholarship, UM-SJTU Joint Institute
         - Honorable Mention, Mathematical Contest in Modeling

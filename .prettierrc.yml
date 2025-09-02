@@ -1,0 +1,7 @@
+# 使用单引号而不是双引号
+singleQuote: true
+# 针对 Markdown 和 YAML 文件，保持折行方式不变，避免破坏格式
+proseWrap: "preserve"
+# YAML 文件使用 2 个空格缩进
+yaml:
+  indent: 2
