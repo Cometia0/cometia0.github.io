@@ -2,16 +2,16 @@
 layout: elmGame
 title: Cytaclysm
 description: Our group game in ENGR100 Proj2
-permalink: /_games/engr100p2/
+permalink: /games/engr100p2/
 img: assets/img/thumbnail_engr100p2.jpg
 importance: 4
 category: fun
 ---
 
-<link rel="stylesheet" href="{{ '/_games/engr100p2/build/style.css' | relative_url }}">
-<script src="{{ '/_games/engr100p2/build/elm-canvas.js' | relative_url }}"></script>
-<script src="{{ '/_games/engr100p2/build/elm-audio.js' | relative_url }}"></script>
-<script src="{{ '/_games/engr100p2/build/main.js' | relative_url }}"></script>
+<link rel="stylesheet" href="{{ '/games/engr100p2/build/style.css' | relative_url }}">
+<script src="{{ '/games/engr100p2/build/elm-canvas.js' | relative_url }}"></script>
+<script src="{{ '/games/engr100p2/build/elm-audio.js' | relative_url }}"></script>
+<script src="{{ '/games/engr100p2/build/main.js' | relative_url }}"></script>
 
 <script>
     const pathname = document.location.pathname + "info";
