@@ -35,10 +35,7 @@ if (typeof window !== "undefined") {
         }
 
         attributeChangedCallback(name, oldValue, newValue) {
-          if (
-            (name === "width" || name === "height") &&
-            oldValue !== newValue
-          ) {
+          if ((name === "width" || name === "height") && oldValue !== newValue) {
             // Wait for Elm to finish rendering and setting its stuff before
             // changing the inner canvas dimensions
             requestAnimationFrame(() => {
@@ -53,12 +50,8 @@ if (typeof window !== "undefined") {
 
           // Get dimensions from the elm-canvas element. If they are not set, try to
           // get them from the canvas element inside (to support elm-canvas@3.0.3)
-          var width = Number(
-            this.getAttribute("width") || this.canvas.getAttribute("width")
-          );
-          var height = Number(
-            this.getAttribute("height") || this.canvas.getAttribute("height")
-          );
+          var width = Number(this.getAttribute("width") || this.canvas.getAttribute("width"));
+          var height = Number(this.getAttribute("height") || this.canvas.getAttribute("height"));
 
           var devicePixelRatio = window.devicePixelRatio || 1;
           this.canvas.style.width = width + "px";
@@ -85,14 +78,14 @@ if (typeof window !== "undefined") {
           } else if (cmd.type === "field") {
             this.context[cmd.name] = cmd.value;
           } else if (cmd.type === "variable") {
-            (function(context) {
+            (function (context) {
               if (cmd.init.type === "function") {
                 const localVar = context[cmd.init.name](...cmd.init.args);
                 const modifiers = cmd.modifiers;
                 for (let i = 0; i < modifiers.length; i++) {
-                    if (modifiers[i].type === "function") {
-                      localVar[modifiers[i].name](...modifiers[i].args);
-                    }
+                  if (modifiers[i].type === "function") {
+                    localVar[modifiers[i].name](...modifiers[i].args);
+                  }
                 }
                 context[cmd.field] = localVar;
               }
@@ -102,8 +95,6 @@ if (typeof window !== "undefined") {
       }
     );
   } else {
-    throw new Error(
-      "window.customElements does not exist. Please use an appropriate polyfill"
-    );
+    throw new Error("window.customElements does not exist. Please use an appropriate polyfill");
   }
 }

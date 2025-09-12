@@ -1,9 +1,9 @@
 ---
 layout: elmGame
-title: Elm Game 2
-description: another project with an image 🎉
+title: Cytaclysm
+description: Our group game in ENGR100 Proj2
 permalink: /_games/engr100p2/
-img: assets/img/6.jpg
+img: assets/img/thumbnail_engr100p2.jpg
 importance: 4
 category: fun
 ---
