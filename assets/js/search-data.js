@@ -75,7 +75,7 @@ ninja.data = [{
           title: 'Cytaclysm',
           description: "Our group game in ENGR100 Proj2",
           section: "Projects",handler: () => {
-              window.location.href = "/_games/engr100p2/";
+              window.location.href = "/games/engr100p2/";
             },},{
         id: 'social-email',
         title: 'email',
