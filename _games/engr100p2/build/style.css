@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'disposabledroid_bbregular';
+    src: url('../assets/disposabledroidbb-webfont.woff2') format('woff2'),
+         url('../assets/disposabledroidbb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+    background-color: rgb(32, 21, 51);
+}
