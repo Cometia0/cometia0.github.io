@@ -71,9 +71,9 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "projects-elm-game-2",
-          title: 'Elm Game 2',
-          description: "another project with an image 🎉",
+            },},{id: "projects-cytaclysm",
+          title: 'Cytaclysm',
+          description: "Our group game in ENGR100 Proj2",
           section: "Projects",handler: () => {
               window.location.href = "/_games/engr100p2/";
             },},{
