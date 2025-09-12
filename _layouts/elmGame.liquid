@@ -1,21 +1,21 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>{{ page.title | escape }}</title>
     <style>
-      /* 恢复到最简单的样式，因为 Elm 会自己处理定位 */
       html,
       body {
         margin: 0;
         padding: 0;
         height: 100%;
-        overflow: hidden; /* 保留这个可以防止意外的滚动条 */
+        overflow: hidden;
       }
     </style>
   </head>
   <body oncontextmenu="return false;">
     <div id="myapp"></div>
+
     {{ content }}
   </body>
 </html>

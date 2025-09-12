@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: elmGame
 title: Games
 permalink: /_games/engr100p2/
 nav: true
@@ -12,9 +12,7 @@ nav_order: 6
 <script src="{{ '/_games/engr100p2/build/main.js' | relative_url }}"></script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-
-    const pathname = "/_games/engr100p2/assets";
+    const pathname = document.location.pathname + "info";
     var app = Elm.Main.init({
       node: document.getElementById('myapp'),
       flags: {
@@ -49,6 +47,4 @@ nav_order: 6
     });
 
     startAudio(app);
-
-  });
 </script>
