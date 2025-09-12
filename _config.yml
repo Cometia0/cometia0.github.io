@@ -193,6 +193,7 @@ exclude:
   - readme_preview/
   - vendor
   - "**/*.bak"
+  - "**/templates/*"
   - .venv/
 keep_files:
   - CNAME
