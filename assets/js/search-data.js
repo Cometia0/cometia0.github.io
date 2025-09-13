@@ -35,6 +35,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "projects-galactic-reclrim",
+          title: 'Galactic Reclrim',
+          description: "Our group game in ENGR100 Proj1",
+          section: "Projects",handler: () => {
+              window.location.href = "/games/engr100p1/";
             },},{id: "projects-cytaclysm",
           title: 'Cytaclysm',
           description: "Our group game in ENGR100 Proj2",

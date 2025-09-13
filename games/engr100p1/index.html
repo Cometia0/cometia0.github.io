@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="UTF-8"> <title>Galactic Reclrim</title> <style>html,body{margin:0;padding:0;height:100%;overflow:hidden}</style> </head> <body oncontextmenu="return false;"> <div id="myapp"></div> <link rel="stylesheet" href="/games/engr100p1/build/style.css"> <script src="/games/engr100p1/build/elm-canvas.js"></script> <script src="/games/engr100p1/build/elm-audio.js"></script> <script src="/games/engr100p1/build/main.js"></script> <script>
+    const pathname = document.location.pathname + "info";
+    var app = Elm.Main.init({
+      node: document.getElementById('myapp'),
+      flags: {
+        windowWidth: window.innerWidth,
+        windowHeight: window.innerHeight,
+        timeStamp: Math.floor(Date.now()),
+        info: localStorage.getItem(pathname) ? localStorage.getItem(pathname) : ""
+      }
+    });
+
+    app.ports.sendInfo.subscribe(function (m) {
+      localStorage.setItem(pathname, m);
+    });
+
+    app.ports.alert.subscribe(function (m) {
+      alert(m);
+    });
+
+    app.ports.prompt.subscribe(function (m) {
+      let res = prompt(m.title);
+      app.ports.promptReceiver.send({
+        name: m.name,
+        result: res
+      });
+    });
+
+    window.addEventListener("keydown", (e) => {
+      const { key, keyCode, metaKey, shiftKey, altKey, ctrlKey } = e;
+      if (keyCode >= 112 && keyCode <= 115) {
+        e.preventDefault();
+      }
+    });
+
+    startAudio(app);
+</script> </body> </html>
